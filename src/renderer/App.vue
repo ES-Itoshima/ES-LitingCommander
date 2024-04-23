@@ -19,7 +19,7 @@ div.wrap
   import { CircularInput } from '@nandenjin/alien-ui'
   import SequenceRow from './components/SequenceRow.vue'
   export default {
-    name:'TsukuliveLightingCommander',
+    name:'ESLightingCommander',
     components: {
       CircularInput,
       SequenceRow
