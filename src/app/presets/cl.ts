@@ -7,7 +7,7 @@ export const cl: Preset[] = [
   {
     id: SF,
     render(d, _, s = 255) {
-      d.set(U, addrs.SF, s)
+      d.set(U, addrs.FR, s)
     },
   },
 ]

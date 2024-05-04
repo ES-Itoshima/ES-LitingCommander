@@ -21,7 +21,7 @@ export const
 GROUND_BASE = 'ground.base',
 GROUND_1 = 'ground1',
 GROUND_2 = 'ground2',
-GROUND_3 = 'ground3'
+GROUND_KOBITO = 'groundkobito'
 
 
 export const ground: Preset[] = [
@@ -31,32 +31,30 @@ export const ground: Preset[] = [
       renderGround(d, s, s, s)
     },
   },
-  // {
-  //   id: GROUND_1,
-  //   render(d, _, s = 255) {
-  //     d.set(U, addrs.SUS_1A, s)
-  //     d.set(U, addrs.SUS_1B, s)
-  //     d.set(U, addrs.SUS_1C, s)
-  //     d.set(U, addrs.SUS_1D, s)
-  //     d.set(U, addrs.SUS_1E, s)
-  //   },
-  // },
-  // {
-  //   id: GROUND_2,
-  //   render(d, _, s = 255) {
-  //     d.set(U, addrs.SUS_2A, s)
-  //     d.set(U, addrs.SUS_2B, s)
-  //     d.set(U, addrs.SUS_2C, s)
-  //   },
-  // },
-  // {
-  //   id: GROUND_3,
-  //   render(d, _, s = 255) {
-  //     d.set(U, addrs.SUS_3A, s)
-  //     d.set(U, addrs.SUS_3B, s)
-  //     d.set(U, addrs.SUS_3C, s / 1.5)
-  //   },
-  // },
+  {
+    id: GROUND_1,
+    render(d, _, s = 255) {
+      d.set(U, addrs.SUS_1A, s)
+      d.set(U, addrs.SUS_1B, s)
+      d.set(U, addrs.SUS_1C, s)
+      d.set(U, addrs.SUS_1D, s)
+      d.set(U, addrs.SUS_1E, s)
+    },
+  },
+  {
+    id: GROUND_2,
+    render(d, _, s = 255) {
+      d.set(U, addrs.SUS_2A, s)
+      d.set(U, addrs.SUS_2B, s)
+      d.set(U, addrs.SUS_2C, s)
+    },
+  },
+  {
+    id: GROUND_KOBITO,
+    render(d, _, s = 255) {
+      d.set(U, addrs.SUS_1A, s)
+    },
+  },
 //   {
 //     id: GROUND_TASUMAKI_CHASE3,
 //     render(d, t, n = 10) {
